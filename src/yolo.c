@@ -13,7 +13,7 @@
 #define CLASSNUM 7
 
 /* Change class names here */
-char *voc_names[] = {"ALB", "BET", "DOL", "LAG", "NoF", "OTHER", "SHARK", "YFT"};
+char *voc_names[] = {"ALB", "BET", "DOL", "LAG", "OTHER", "SHARK", "YFT"};
 image voc_labels[CLASSNUM];
 
 void train_yolo(char *cfgfile, char *weightfile)
