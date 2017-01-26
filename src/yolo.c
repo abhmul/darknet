@@ -13,16 +13,16 @@
 #define CLASSNUM 7
 
 /* Change class names here */
-char *voc_names[] = {"ALB", "BET", "DOL", "LAG", "NoF", "OTHER", "SHARK", "YFT"};
+char *voc_names[] = {"ALB", "BET", "DOL", "LAG", "OTHER", "SHARK", "YFT"};
 image voc_labels[CLASSNUM];
 
 void train_yolo(char *cfgfile, char *weightfile)
 {
     /* Change training folders here */
-    char *train_images = "/data/train.txt";
+    char *train_images = "data/training_list.txt";
 
     /* Change output weight folders here */
-    char *backup_directory = "/backup/";
+    char *backup_directory = "backup/";
 
     srand(time(0));
     data_seed = time(0);
